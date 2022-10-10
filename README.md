@@ -15,3 +15,10 @@ Notes from a short and useful article by [Suzie Prince](https://www.mindtheprodu
 
 - DevOps: A culture that "promotes collaboration between the developers and other technology professionals, often called operations or just ops".  
 
+<img  
+  alt="I/CD" 
+  src="https://wac-cdn.atlassian.com/dam/jcr:b2a6d1a7-1a60-4c77-aa30-f3eb675d6ad6/ci%20cd%20asset%20updates%20.007.png?cdnVersion=573" 
+  style="width:650px;"
+  />
+  
+CI/CD image credit: atlasian.com, [Sten Pittet](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)    
