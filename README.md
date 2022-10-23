@@ -21,4 +21,13 @@ Notes from a short and useful article by [Suzie Prince](https://www.mindtheprodu
   style="width:650px;"
   />
   
-CI/CD image credit: atlasian.com, [Sten Pittet](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)    
+CI/CD image credit: atlasian.com, [Sten Pittet](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment)   
+
+## Git - Removing Sensetive Data
+
+Mistakes happen. On a version control system like git, there will be a time when a sensetive information is commited to a repo, e.g. a password, Personal Identifying Information, etc. This [guide](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) on Gthub introduces two options to fix such mistake. The idea, as far I as I can tell, is to rebuild the repo with mistakes removed, e.g. There will be similar cmmits but with different hash codes. Here is my experience with the two methods:
+
+1. [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/): A ```jar``` file that requires a Java Runtime Environment. In addition to removing sensetive files, it allows to replace sensetive texts with a generic text ```***REMOVED***```. The instruction on Github was slightly different with the package's website. I managed to install and run the command, however I ran into error when it came to pushing the changes back to Github. I found some potential reasons and fixes, but before spending too much time I tried the 2nd option, which worked like a breeze.
+
+2. [git filter-repo](https://github.com/newren/git-filter-repo): A ```python``` file that requires Python3. With the alias ```git-filter-repo``` pointing to ```python3 /path/to/downloaded/git-filter-repo```, the steps to remove the sensetive file was as simple as the Github's guide.
+
