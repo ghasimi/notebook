@@ -29,5 +29,12 @@ Mistakes happen. On a version control system like git, there will be a time when
 
 1. [BFG Repo-Cleaner](https://rtyley.github.io/bfg-repo-cleaner/): A ```jar``` file that requires a Java Runtime Environment. In addition to removing sensetive files, it allows to replace sensetive texts with a generic text ```***REMOVED***```. The instruction on Github was slightly different with the package's website. I managed to install and run the command, however I ran into error when it came to pushing the changes back to Github. I found some potential reasons and fixes, but before spending too much time I tried the 2nd option, which worked like a breeze.
 
-2. [git filter-repo](https://github.com/newren/git-filter-repo): A ```python``` file that requires Python3. With the alias ```git-filter-repo``` pointing to ```python3 /path/to/downloaded/git-filter-repo```, the steps to remove the sensetive file was as simple as the Github's guide.
+2. [git filter-repo](https://github.com/newren/git-filter-repo): A ```python``` file that requires Python3. With the alias ```git-filter-repo``` pointing to ```python3 /path/to/downloaded/git-filter-repo```, the steps to remove the sensetive file was as simple as this:
 
+```bash
+git clone https://github.com/myusername/myrep.git
+cd myrepo
+git-filter-repo --invert-paths --path path/to/sensetive/file
+git remote add origin https://github.com/myusername/myrep.git
+git push origin --force --all
+```
