@@ -44,6 +44,42 @@ Microsoft's advice:
 Or, if you only need to run apps, install the Runtime. 
 If you're installing the Runtime, we suggest you install the ASP.NET Core Runtime as it includes both .NET and ASP.NET Core runtimes.
 
+## "Hello World"
+
+A simple "Hello World" console app in `C#` to test the `.NET` framework. 
+
+1.  App's directory. 
+```
+mkdir HelloWorld && \ 
+  cd HelloWorld  
+```
+2. Create the app. 
+
+```
+dotnet new console --framework net6.0
+```
+Now the app's directory looks like this:
+
+```
++ HelloWorld
+  |  
+  + HelloWorld.csproj
+  + obj   
+  + Program.cs
+```
+And the content of `Program.cs`:
+```c#
+// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+```
+
+3. Running the app.
+
+```
+dot net run
+```
+Which will print `Hello, World!` in the terminal. 
+
 
 
 
