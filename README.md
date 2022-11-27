@@ -38,3 +38,9 @@ git-filter-repo --invert-paths --path path/to/sensetive/file
 git remote add origin https://github.com/myusername/myrep.git
 git push origin --force --all
 ```
+
+## C#, .NET, and ASP.NET
+
+[.NET](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet) is an open-source and cross-platform framework created by Microsoft for software development. [ASP.NET](https://en.wikipedia.org/wiki/ASP.NET) is a framework for building dynamic web applications with `.NET` and `C#`. [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)) is a programming language that can be used to utilize frameworks like`.NET` and `ASP.NET`. A summary note on installation and sample codes added to [this page](https://github.com/ghasimi/notebook/blob/dotnet/dotnet.md). 
+
+
