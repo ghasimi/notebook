@@ -76,7 +76,7 @@ Console.WriteLine("Hello, World!");
 3. Running the app.
 
 ```
-dot net run
+dotnet run
 ```
 Which will print `Hello, World!` in the terminal. 
 
